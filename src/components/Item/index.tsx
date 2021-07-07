@@ -3,18 +3,32 @@ import gift from './gift.png';
 import empty from './empty.png'
 import click from './click.png'
 import './index.css'
-
+import SigoModal from '../Pro-ups'
+import { sigomodal } from '../Pro-ups';
 class index extends Component<any,any>{
 
-   
-    click = ()=>{
-           
-        //制作一个抽奖的弹窗
-        alert('抽奖开始~~~~')
-
-
-
+     
+        // //制作一个抽奖的弹窗
+    handleClick =()=>{
+        return sigomodal({
+            marginTop: '20%',
+            title:()=>{},
+            content:()=>{
+              return (
+                <div style={{textAlign:'center',padding:'1.333vw 0'}}>
+                  <img src={gift} style={{width:'12vw',height:'12vw'}} />
+                  <p style={{fontWeight:700,fontSize:'2.667vw',color:'red',margin:'.16rem 0 1.067vw'}}>啊哦，积分不足</p>
+                 
+                </div>
+              )
+            },
+            okbtn:()=>{},
+            onClose:()=>{},
+            showX: true,
+            timeout: 3000
+          })
     }
+    
 
     render() {
 
@@ -25,12 +39,8 @@ class index extends Component<any,any>{
                 <div className="gift">
                     <img src={gift} alt="gift" />
                     {
-                        isEmpty ?  <button  className= "empty"  /> :  <button  className= "click" onClick={this.click}  />
+                        isEmpty ?  <button  className= "empty"  /> :  <button  className= "click" onClick={this.handleClick}  />
                     }  
-                    
-                    <div className="giftResult" >
-                        <p>恭喜你，中奖啦！</p>
-                    </div>
 
                 </div>
             </div>
