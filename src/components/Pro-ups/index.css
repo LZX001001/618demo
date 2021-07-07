@@ -1,0 +1,29 @@
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+  height: 100%;
+  z-index: 1001;
+  }
+.modal {
+    position: relative;
+    margin:0 auto;
+    width: 20%;
+    height:22%;
+    border-radius:30%;
+    background:#fff;
+  }
+  .btn {
+    cursor: pointer;
+  }
+  .icon_x {
+    position:absolute;
+    right: 40%;
+    top: 135px;
+    font-size: 18px;
+    background: red;
+    border-radius:30%;
+  }
