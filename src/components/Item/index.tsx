@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import gift from './gift.png';
-import empty from './empty.png'
-import click from './click.png'
 import './index.css'
-import SigoModal from '../Pro-ups'
 import { sigomodal } from '../Pro-ups';
 class index extends Component<any,any>{
 
@@ -16,7 +13,7 @@ class index extends Component<any,any>{
             content:()=>{
               return (
                 <div style={{textAlign:'center',padding:'1.333vw 0'}}>
-                  <img src={gift} style={{width:'12vw',height:'12vw'}} />
+                  <img src={gift} style={{width:'12vw',height:'12vw'}} alt="gift"/>
                   <p style={{fontWeight:700,fontSize:'2.667vw',color:'red',margin:'.16rem 0 1.067vw'}}>啊哦，积分不足</p>
                  
                 </div>
