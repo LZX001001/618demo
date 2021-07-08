@@ -10,7 +10,7 @@ class index extends Component {
            {id:'002',  isEmpty: true, sum:0},
            {id:'003', isEmpty: false, sum:100},
            {id:'004', isEmpty: false, sum:100},
-           {id:'005', isEmpty: false, sum:100},
+           {id:'005', isEmpty: true, sum:0},
            {id:'006', isEmpty: false, sum:100},
            {id:'007',  isEmpty: true, sum:0},
            {id:'008', isEmpty: false, sum:100},
